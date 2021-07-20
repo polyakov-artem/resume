@@ -1,0 +1,39 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.progress {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: $gray;
+  border-radius: 0;
+
+  &_value {
+    &_25 {
+      .progress__line {
+        width: 25%;
+      }
+    }
+
+    &_50 {
+      .progress__line {
+        width: 50%;
+      }
+    }
+
+    &_75 {
+      .progress__line {
+        width: 75%;
+      }
+    }
+  }
+
+  &__line {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left: 0;
+    border-radius: 0;
+    background: $blue;
+  }
+}

@@ -1,0 +1,26 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.list {
+  &__item {
+    padding-left: 25px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: rem(10px);
+      left: rem(10px);
+      content: '';
+      display: block;
+      width: rem(5px);
+      height: rem(5px);
+      border-radius: 100%;
+      background-color: $blue-dark;
+    }
+
+    &_sublist {
+      width: 100%;
+      margin-left: 5px;
+    }
+  }
+}

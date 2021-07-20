@@ -1,0 +1,170 @@
+extends ../../common/pug/page-template
+
+block title
+  title Резюме
+
+block content
+  body.resume
+    main.resume__main
+      .resume__column-info
+        article.person.resume__person
+          .person__img-wrap
+            img.person__img(src = require('~images/1.jpg').default alt='Фото')
+          h1.person__name
+            span Поляков 
+            | Артем Викторович
+          ul.info
+            li.info__item
+              span.info__item-header
+                svg.info__icon
+                  use(href = '#info')
+                span.info__item-name Возраст:
+              span.info__item-text 32
+            li.info__item
+              span.info__item-header
+                svg.info__icon.info__icon_place
+                  use(href = '#place')
+                span.info__item-name Город:
+              span.info__item-text Набережные Челны
+            li.info__item
+              span.info__item-header
+                svg.info__icon
+                  use(href = '#phone')
+                span.info__item-name Телефон:
+              a.link.info__link(href='tel:+12345') 12345678910
+            li.info__item
+              span.info__item-header
+                svg.info__icon.info__icon_email
+                  use(href = '#email')
+                span.info__item-name E-mail:
+              a.link.info__link(href="mailto:Polyakov.Artem.V@yandex.ru?subject=Резюме") Polyakov.Artem.V@yandex.ru
+
+        section.section.section-about.resume__section
+          h3.title-h3.section__title О себе
+          p.section-about__text 
+           | Очень увлечен темой веб-разработки и стараюсь посвятить все свободное время совершенствованию
+           | в этом направлении. Постоянно стремлюсь улучшить качество структуры проекта и кода на основе опыта, 
+           | полученного при разборе чужих работ и чтении документации. В планах освоить React/Redux на конкурентоспособном уровне.
+        section.section.section-hobby.resume__section
+          h3.title-h3.section__title Увлечения
+          ul.hobbies
+            li.hobbies__item
+              svg.hobbies__icon
+                use(href='#monitor')
+              .hobbies__title Программирование
+            li.hobbies__item
+              svg.hobbies__icon
+                use(href='#bicycle')
+              .hobbies__title Езда на велосипеде
+            li.hobbies__item
+              svg.hobbies__icon
+                use(href='#ball')
+              .hobbies__title Волейбол
+
+      .resume__column-experience
+        section.section.resume__section
+          header.section__header
+            svg.section__header-icon
+              use(href='#school')
+            h3.title-h3.section__title Образование
+          ul.dates-list
+            li.dates-list__item
+              .dates-list__dates 
+                time(datetime="2006") 2006 
+                | - 
+                time(datetime="2011") 2011
+              .dates-list__content
+                p.dates-list__description Высшее образование, ИНЕКА, специальность - гидравлические машины, гидроприводы и гидропневмоавтоматика
+                p.dates-list__post Специалист
+        section.section.resume__section
+          header.section__header
+            svg.section__header-icon
+              use(href='#work')
+            h3.title-h3.section__title Опыт работы
+          ul.dates-list
+            li.dates-list__item
+              .dates-list__dates
+                time(datetime="2011") 2011 
+                | - 
+                time(datetime="2020") 2021
+              .dates-list__content
+                p.dates-list__description КАМАЗ, Научно - технический центр
+                p.dates-list__post Главный специалист
+        section.section.resume__section
+          header.section__header
+            svg.section__header-icon
+              use(href='#badge')
+            h3.title-h3.section__title Опыт разработки
+          h4.section__list-title Примеры работ:
+          ul.list
+            li.list__item
+              a.link(href='https://polyakov-artem.github.io/travel' target="_blank") Travel
+            li.list__item
+              p.list__item-title Landing example:
+              ul.list.list_sublist
+                li.list__item
+                  a.link(href='https://polyakov-artem.github.io/landing-example/form-elements.html' target="_blank") Form-elements 
+                li.list__item
+                  a.link(href='https://polyakov-artem.github.io/landing-example/cards.html' target="_blank") Cards
+                li.list__item
+                  a.link(href='https://polyakov-artem.github.io/landing-example/headers-and-footers.html' target="_blank") Headers and footers
+                li.list__item
+                  a.link(href='https://polyakov-artem.github.io/landing-example/landing-page.html' target="_blank") Landing page
+
+        section.section.resume__section.section-skills
+          header.section__header
+            svg.section__header-icon
+              use(href='#settings')
+            h3.title-h3.section__title Навыки
+          p.section-skills__text Английский уровня А1-А2, способен разобраться в технической документации. 
+          ul.section-skills__skills
+            li.skill.section-skills__skill
+              p.skill__name Javascript
+              .progress.progress_value_50.skill__progress
+                .progress__line
+            li.skill.section-skills__skill
+              p.skill__name JQuery
+              .progress.progress_value_50.skill__progress
+                .progress__line
+            li.skill.section-skills__skill
+              p.skill__name HTML5
+              .progress.progress_value_75.skill__progress
+                .progress__line
+            li.skill.section-skills__skill
+              p.skill__name PUG
+              .progress.progress_value_75.skill__progress
+                .progress__line
+            li.skill.section-skills__skill
+              p.skill__name CSS/SCSS
+              .progress.progress_value_75.skill__progress
+                .progress__line
+            li.skill.section-skills__skill
+              p.skill__name GIT
+              .progress.progress_value_50.skill__progress
+                .progress__line
+            li.skill.section-skills__skill
+              p.skill__name Webpack
+              .progress.progress_value_50.skill__progress
+                .progress__line
+            li.skill.section-skills__skill
+              p.skill__name Gulp
+              .progress.progress_value_50.skill__progress
+                .progress__line
+
+        section.section.resume__section
+          header.section__header
+            svg.section__header-icon
+              use(href='#skills')
+            h3.title-h3.section__title Дополнительная информация
+          h4.section__list-title Личные качества:
+          ul.list
+            li.list__item Ответственность
+            li.list__item Исполнительность
+            li.list__item Быстрообучаемость
+            li.list__item Целеустремленность 
+            li.list__item Постоянно занимаюсь саморазвитием в профессиональной сфере 
+
+
+
+
+        

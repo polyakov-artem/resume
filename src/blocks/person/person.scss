@@ -1,0 +1,34 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.person {
+  text-align: center;
+
+  &__name {
+    font-size: rem(23px);
+    line-height: (38/23);
+    text-transform: uppercase;
+    color: $gray;
+    margin-bottom: rem(10px);
+
+    span {
+      color: $blue-dark;
+      font-weight: 700;
+    }
+  }
+
+  &__img-wrap {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,9 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.title-h3 {
+  font-size: rem(23px);
+  line-height: (38/23);
+  font-weight: 700;
+  color: $blue-dark
+}

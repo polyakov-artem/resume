@@ -1,0 +1,12 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.link {
+  color: $blue-dark;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $blue;
+  }
+}

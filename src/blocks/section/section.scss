@@ -1,0 +1,27 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.section {
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    color: $blue-dark;
+  }
+
+  &__header-icon {
+    width: rem(24px);
+    height: rem(36px);
+    margin-right: rem(10px);
+    fill: currentColor;
+    flex: none;
+  }
+
+  &__list-title {
+    font-weight: bold;
+    margin-bottom: rem(10px);
+  }
+
+  &__title {
+    margin-bottom: rem(10px);
+  }
+}

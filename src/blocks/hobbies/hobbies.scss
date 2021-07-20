@@ -1,0 +1,17 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.hobbies {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(10px);
+  }
+
+  &__icon {
+    width: rem(18px);
+    height: rem(18px);
+    fill: $blue-dark;
+    margin-right: rem(10px);
+  }
+}

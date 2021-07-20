@@ -1,0 +1,29 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+@import '~scss/utils/grid';
+
+.section-skills {
+  &__text {
+    margin-bottom: rem(10px);
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 300px;
+
+    @include media-up(md) {
+      max-width: none;
+    }
+  }
+
+  &__skill {
+    margin-bottom: 10px;
+    flex: 0 0 100%;
+
+    @include media-up(md) {
+      flex: 0 0 48%;
+    }
+  }
+}

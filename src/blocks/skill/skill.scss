@@ -1,0 +1,16 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.skill {
+  align-items: baseline;
+  display: flex;
+
+  &__name {
+    margin-right: 10px;
+    flex: 0 0 80px;
+  }
+
+  &__progress {
+    flex: 1 1 0;
+  }
+}

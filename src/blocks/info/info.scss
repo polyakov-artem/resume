@@ -1,0 +1,33 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.info {
+  &__item {
+    display: flex;
+    align-items: center;
+    color: $blue-dark;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+      margin-bottom: rem(10px);
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  &__item-name {
+    margin-right: rem(6px);
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: rem(18px);
+    height: rem(18px);
+    flex: none;
+    margin-right: rem(6px);
+  }
+}

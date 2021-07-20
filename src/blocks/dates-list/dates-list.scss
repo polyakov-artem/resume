@@ -1,0 +1,21 @@
+@import '~scss/vars';
+@import '~node-modules/sass-rem/rem';
+
+.dates-list {
+  &__item {
+    display: flex;
+  }
+
+  &__dates {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  &__content {
+    padding-left: 20px;
+  }
+
+  &__post {
+    font-weight: bold;
+  }
+}

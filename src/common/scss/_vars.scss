@@ -1,0 +1,27 @@
+@import '~node-modules/sass-rem/rem';
+
+// Fonts
+$roboto: 'Roboto', Helvetica, Arial, sans-serif;
+
+// Colors
+$dark: #333333;
+$gray: #A9A9A9;
+$blue: #56CCF2;
+$blue-dark: #157698;
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
